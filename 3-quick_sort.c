@@ -2,6 +2,7 @@
 
 /**
  * partition - partition func
+ * @array: our array
  * @start: start
  * @end: end
  *
@@ -35,6 +36,7 @@ int partition(int *array, int start, int end)
 	return (i);
 }
 /**
+ * quick - find the pivot func
  * @array: my array
  * @start: start of the array
  * @end: end of the array
@@ -44,6 +46,7 @@ int partition(int *array, int start, int end)
 void quick(int *array, int start, int end)
 {
 	int pivot;
+
 	if (end <= start)
 	{
 		return;
